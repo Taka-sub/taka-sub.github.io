@@ -1,0 +1,67 @@
+/* 索引页-全局 */
+body#index {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #fff;
+    background-color: #303030;
+    /* background-image: url(../img/dark.jpg); */
+    background-image: url(../img/light.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: /*'Noto Serif CJK SC Black', */'Noto Sans CJK SC Regular';
+}
+
+body.light {
+    color: rgba(0,0,0,.87) !important;
+    background-color: #fff !important;
+}
+
+/* 索引页-按钮 */
+.mui-btn.mui-btn--flat {
+    color: inherit;
+}
+
+.mui-btn.mui-btn--flat:active,
+.mui-btn.mui-btn--flat:focus,
+.mui-btn.mui-btn--flat:hover {
+    color: inherit;
+    background-color: rgba(255,255,255,.1);
+}
+
+.light .mui-btn.mui-btn--flat:active,
+.light .mui-btn.mui-btn--flat:focus,
+.light .mui-btn.mui-btn--flat:hover {
+    color: inherit;
+    background-color: rgba(0,0,0,.1);
+}
+
+/* 索引页-打字效果 */
+#index .ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
