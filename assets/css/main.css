@@ -1,0 +1,4 @@
+/* 通用 */
+.mdui-theme-layout-dark img {
+    filter:brightness(.8)
+}
