@@ -16,6 +16,10 @@ body#index.dark {
     background-image: url(../img/dark.jpg);
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 /* 索引页-标题 */
 h1 {
     font-size: 2em;

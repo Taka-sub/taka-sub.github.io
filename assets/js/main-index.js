@@ -8,25 +8,16 @@ ityped.init('#index #iTyped', {
 });
 // 外网访问检测
 function isWAN() {
-    mdui.snackbar({
-        message: '成功访问外网。',
-        position: 'left-bottom',
-        timeout: '3000'
-    });
-    $('.mdui-btn').removeClass('mdui-invisible');
+    document.querySelector('.mui-dropdown').className.remove('invisible');
     rmWANCheck()
 };
 function isLAN() {
-    mdui.snackbar({
-        message: '外网访问失败。此站点内容可能不适合你所在的国家或地区。',
-        position: 'left-bottom',
-        timeout: '7000',
-    });
     rmWANCheck()
 };
 function rmWANCheck() {
-    document.getElementById('LANCheck').removeAttribute('src');
-    $('#LANCheck').remove();
+    let LANCheck = document.getElementById('LANCheck')
+    LANCheck.removeAttribute('src');
+    LANCheck.parentNode.removeChild(LANCheck);
 };
 
-$('body').append('<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" onerror="isLAN()" id="LANCheck" style="display: none;">');
+document.querySelector('body').innerHTML += '<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" onerror="isLAN()" id="LANCheck" style="display: none;">'
