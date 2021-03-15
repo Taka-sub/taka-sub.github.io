@@ -35,3 +35,35 @@ $('#more').on('click', function(link){
     ]
     });
 });
+
+// 外网访问检测
+function isWAN() {
+    mdui.snackbar({
+        message: '你成功访问了外网。',
+        position: 'left-bottom',
+        timeout: '3000'
+    });
+    $('.mdui-btn').removeClass('mdui-invisible');
+    rmWANCheck()
+};
+function isLAN() {
+    mdui.snackbar({
+        message: '外网访问失败，此站点内容可能不适合你所在的国家或地区。',
+        position: 'left-bottom',
+        timeout: '7000',
+        /*buttonText: '访问 Bing',
+        onButtonClick: function() {
+            window.open('https://cn.bing.com','_self');
+        },
+        onClose: function() {
+            window.open('https://cn.bing.com','_self');
+        }*/
+    });
+    rmWANCheck()
+};
+function rmWANCheck() {
+    document.getElementById('LANCheck').removeAttribute('src');
+    $('#LANCheck').remove();
+};
+
+$('body').append('<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" onerror="isLAN()" id="LANCheck" style="display: none;">');
