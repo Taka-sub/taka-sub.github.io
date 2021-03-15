@@ -3,7 +3,7 @@ var $ = mdui.$;
 
 // 打字效果
 ityped.init('#index #iTyped', {
-    strings:['里·动画', '表·动画', '漫画(筹备中)', '游戏(筹备中)', '鹰小队'],
+    strings:['里·动画', '表·动画'/*, '漫画(筹备中)', '游戏(筹备中)'*/, '鹰小队'],
     startDelay: 500,
     backDelay:  2500,
     backSpeed:  100,
@@ -14,11 +14,14 @@ ityped.init('#index #iTyped', {
 $('#more').on('click', function(link){
     link.preventDefault();
     mdui.dialog({
-    title: '正在搭建中...',
+    title: '内容页正在搭建中...',
     content: '请先访问官方哔哩哔哩或微博。',
     buttons: [
         {
-            text: '关闭'
+            text: '预览',
+            onClick: function() {
+                window.open('2021.html','_blank');
+            }
         },
         {
             text: '微博',
@@ -39,7 +42,7 @@ $('#more').on('click', function(link){
 // 外网访问检测
 function isWAN() {
     mdui.snackbar({
-        message: '你成功访问了外网。',
+        message: '成功访问外网。',
         position: 'left-bottom',
         timeout: '3000'
     });
@@ -48,16 +51,9 @@ function isWAN() {
 };
 function isLAN() {
     mdui.snackbar({
-        message: '外网访问失败，此站点内容可能不适合你所在的国家或地区。',
+        message: '外网访问失败。此站点内容可能不适合你所在的国家或地区。',
         position: 'left-bottom',
         timeout: '7000',
-        /*buttonText: '访问 Bing',
-        onButtonClick: function() {
-            window.open('https://cn.bing.com','_self');
-        },
-        onClose: function() {
-            window.open('https://cn.bing.com','_self');
-        }*/
     });
     rmWANCheck()
 };
