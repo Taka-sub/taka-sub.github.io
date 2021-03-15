@@ -1,6 +1,3 @@
-// 通用
-var $ = mdui.$;
-
 // 打字效果
 ityped.init('#index #iTyped', {
     strings:['里·动画', '表·动画'/*, '漫画(筹备中)', '游戏(筹备中)'*/, '鹰小队'],
@@ -9,36 +6,6 @@ ityped.init('#index #iTyped', {
     backSpeed:  100,
     loop: true
 });
-
-// 按钮点击监听
-$('#more').on('click', function(link){
-    link.preventDefault();
-    mdui.dialog({
-    title: '内容页正在搭建中...',
-    content: '请先访问官方哔哩哔哩或微博。',
-    buttons: [
-        {
-            text: '预览',
-            onClick: function() {
-                window.open('2021.html','_blank');
-            }
-        },
-        {
-            text: '微博',
-            onClick: function() {
-                window.open('https://m.weibo.cn/u/7369491931','_blank');
-            }
-        },
-        {
-        text: '哔哩哔哩',
-            onClick: function() {
-                window.open('https://space.bilibili.com/343162729/dynamic','_blank');
-            }
-        }
-    ]
-    });
-});
-
 // 外网访问检测
 function isWAN() {
     mdui.snackbar({
