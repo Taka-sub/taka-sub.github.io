@@ -8,7 +8,8 @@ ityped.init('#index #iTyped', {
 });
 // 外网访问检测
 function isWAN() {
-    document.querySelector('.mui-dropdown').className.remove('invisible');
+    let dropdown = document.querySelector('.mui-dropdown');
+    dropdown.className = dropdown.className.replace(' invisible', '');
     rmWANCheck()
 };
 function isLAN() {
