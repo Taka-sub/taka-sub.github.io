@@ -1,19 +1,17 @@
 // 外网访问检测
 function isWAN() {
-    let dropdown = document.querySelector('.mui-dropdown');
-    dropdown.className = dropdown.className.replace('invisible', '');
-    rmWANCheck()
+    document.querySelectorAll('.hidden').forEach((elm) => {
+        elm.className = elm.className.replace('hidden', '');
+    });
 };
-function isLAN() {
-    rmWANCheck()
-};
-function rmWANCheck() {
+
+document.querySelector('body').innerHTML += '<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" id="LANCheck" style="display: none;">'
+
+setTimeout(function() {
     let LANCheck = document.getElementById('LANCheck')
     LANCheck.removeAttribute('src');
     LANCheck.parentNode.removeChild(LANCheck);
-};
-
-document.querySelector('body').innerHTML += '<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" onerror="isLAN()" id="LANCheck" style="display: none;">'
+},1000);
 
 // 打字效果
 ityped.init('#index #iTyped', {

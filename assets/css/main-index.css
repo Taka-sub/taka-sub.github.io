@@ -16,8 +16,8 @@ body#index.dark {
     background-image: url(../img/dark.jpg);
 }
 
-.invisible {
-    visibility: hidden;
+.hidden {
+    display: none !important;
 }
 
 /* 索引页-标题 */
