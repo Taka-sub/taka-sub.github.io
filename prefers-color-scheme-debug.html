@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Taka, 鹰小队">
+    <meta name="description" content="liulipack">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="ie-stand">
+    <title>鹰小队翻译组 - prefers-color-scheme 调试</title>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="assets/css/mui.min.css">
+    <!-- 文档内样式 -->
+    <style>
+body {
+    transition: color, background-color .25s ease-in-out;
+}
+
+.scheme .light,
+.scheme .dark,
+.scheme .no-preference {
+    display: none;
+}
+
+.scheme .old {
+    display: block;
+}
+
+.mui-panel {
+    margin-top: 16px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+        background-color: #303030;
+    }
+    
+    .scheme .dark {
+        display: block;
+    }
+    .scheme .old {
+        display: none;
+    }
+
+    .mui-panel {
+        background-color: #424242;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: rgba(0,0,0,.87);
+        background-color: #fff;
+    }
+    .scheme .old {
+        display: none;
+    }
+    
+    .scheme .light {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: no-preference) {
+    body {
+        color: #fff;
+        background-color: #303030;
+    }
+    .scheme .old {
+        display: none;
+    }
+
+    .scheme .no-preference {
+        display: block;
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="mui-container">
+    <div class="mui-panel">
+        <h1 class="scheme">
+            <span>当前 prefers-color-scheme 状态为：</span>
+            <span class="dark">dark(暗色)。</span>
+            <span class="light">light(亮色)。</span>
+            <span class="no-preference">no-preference(无主题)。系统不支持设置主题色或者支持主题色并默认为/被设为了未设置/无偏好。</span>
+            <span class="old">浏览器较旧或系统不支持设置主题色。</span>
+        </h1>
+    </div>
+    <div class="mui-panel">
+        <h1>视窗 10(Windows 10)</h1>
+        <ul>
+            <li>Edge 浏览器(89.0.774.54)
+                <ol>
+                    <li>依次点击右上角更多(三个点)-设置-外观-默认主题，进行修改。</li>
+                </ol>
+            </li>
+            <li>Firefox 开发者版浏览器(87.0b9)
+                <ol>
+                    <li>依次点击“开始”(Windows 徽标)-设置(齿轮图标)-个性化-颜色-选择颜色，进行修改。</li>
+                </ol>
+            </li>
+            <li>Tor 浏览器(10.0.12)
+                <ol>
+                    <li>默认亮色，未找到调整方式。</li>
+                </ol>
+            </li>
+            <li>IE 浏览器(“关于”里没看到)
+                <ol>
+                    <li>默认亮色，未找到调整方式。</li>
+                </ol>
+            </li>
+            <li>其他浏览器
+                <ol>
+                    <li>未测试。</li>
+                </ol>
+            </li>
+        </ul>
+        <h1>安卓(Android)</h1>
+        <ol>
+            <li>未测试</li>
+        </ol>
+        <h1>MacOS</h1>
+        <ol>
+            <li>未测试</li>
+        </ol>
+        <h1>Linux-deb 派系</h1>
+        <ol>
+            <li>未测试</li>
+        </ol>
+        <h1>Linux-rpm 派系</h1>
+        <ol>
+            <li>未测试</li>
+        </ol>
+        <h1>Linux-其他派系</h1>
+        <ol>
+            <li>未测试</li>
+        </ol>
+    </div>
+</div>
+
+</html>
