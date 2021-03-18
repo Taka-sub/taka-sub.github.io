@@ -10,6 +10,7 @@
     <title>鹰小队翻译组 - prefers-color-scheme 调试</title>
     <!-- 外部样式 -->
     <link rel="stylesheet" href="assets/css/mui.min.css">
+    <link rel="stylesheet" href="assets/css/typo.css">
     <!-- 文档内样式 -->
     <style>
 body {
@@ -31,8 +32,18 @@ body {
 }
 
 h1 {
-    font-size: 2em;
-    margin: .67em 0;
+    color: inherit;
+}
+
+ul,
+ol {
+    padding: revert;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,7 +98,7 @@ h1 {
 <div class="mui-container">
     <div class="mui-panel">
         <h1 class="scheme">
-            <span>当前 prefers-color-scheme 状态为：</span>
+            当前 prefers-color-scheme 状态为：
             <span class="dark">dark(暗色)。</span>
             <span class="light">light(亮色)。</span>
             <span class="no-preference">no-preference(无主题)。系统不支持设置主题色或者支持主题色并默认为/被设为了未设置/无偏好。</span>
