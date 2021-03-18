@@ -22,14 +22,14 @@ h1 {
     color: inherit;
 }
 
-/* 配色检测 */
-.scheme .light,
-.scheme .dark,
-.scheme .no-preference {
+/* 主题检测 */
+#scheme .light,
+#scheme .dark,
+#scheme .no-preference {
     display: none;
 }
 
-.scheme .old {
+#scheme .fail {
     display: block;
 }
 
@@ -43,10 +43,10 @@ h1 {
         background-color: #303030;
     }
     
-    .scheme .dark {
+    #scheme .dark {
         display: block;
     }
-    .scheme .old {
+    #scheme .fail {
         display: none;
     }
 
@@ -60,11 +60,11 @@ h1 {
         color: rgba(0,0,0,.87);
         background-color: #fff;
     }
-    .scheme .old {
+    #scheme .fail {
         display: none;
     }
     
-    .scheme .light {
+    #scheme .light {
         display: block;
     }
 }
@@ -74,11 +74,11 @@ h1 {
         color: #fff;
         background-color: #303030;
     }
-    .scheme .old {
+    #scheme .fail {
         display: none;
     }
 
-    .scheme .no-preference {
+    #scheme .no-preference {
         display: block;
     }
 }
@@ -88,12 +88,12 @@ h1 {
 
 <div class="mui-container typo">
     <div class="mui-panel">
-        <h1 class="scheme">
+        <h1 id="scheme">
             当前 prefers-color-scheme 状态为：
             <span class="dark">dark(暗色)。</span>
             <span class="light">light(亮色)。</span>
-            <span class="no-preference">no-preference(无主题)。系统不支持设置主题色或者支持主题色并默认为/被设为了未设置/无偏好。</span>
-            <span class="old">浏览器较旧或系统不支持设置主题色。</span>
+            <span class="no-preference">no-preference(无偏好)。系统不支持设置主题色或者支持主题色并默认为/被设为了未设置/无偏好。</span>
+            <span class="fail">浏览器较旧或系统不支持设置主题色。</span>
         </h1>
     </div>
     <div class="mui-panel">
