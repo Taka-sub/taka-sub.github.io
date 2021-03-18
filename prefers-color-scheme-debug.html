@@ -13,81 +13,83 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <!-- 文档内样式 -->
     <style>
-/* 全局 */
-body {
-    transition: color, background-color .25s ease-in-out;
-}
+        /* 全局 */
+        body {
+            transition: color, background-color .25s ease-in-out;
+        }
 
-h1 {
-    color: inherit;
-}
+        h1 {
+            color: inherit;
+        }
 
-/* 主题检测 */
-#scheme .light,
-#scheme .dark,
-#scheme .no-preference {
-    display: none;
-}
+        /* 主题检测 */
+        #scheme .light,
+        #scheme .dark,
+        #scheme .no-preference {
+            display: none;
+        }
 
-#scheme .fail {
-    display: block;
-}
+        #scheme .fail {
+            display: block;
+        }
 
-.mui-panel {
-    margin-top: 16px;
-}
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #fff;
+                background-color: #303030;
+            }
+            
+            #scheme .dark {
+                display: block;
+            }
+            #scheme .fail {
+                display: none;
+            }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #fff;
-        background-color: #303030;
-    }
-    
-    #scheme .dark {
-        display: block;
-    }
-    #scheme .fail {
-        display: none;
-    }
+            .mui-panel {
+                background-color: #424242;
+            }
+        }
 
-    .mui-panel {
-        background-color: #424242;
-    }
-}
+        @media (prefers-color-scheme: light) {
+            body {
+                color: rgba(0,0,0,.87);
+                background-color: #fff;
+            }
 
-@media (prefers-color-scheme: light) {
-    body {
-        color: rgba(0,0,0,.87);
-        background-color: #fff;
-    }
-    #scheme .fail {
-        display: none;
-    }
-    
-    #scheme .light {
-        display: block;
-    }
-}
+            #scheme .fail {
+                display: none;
+            }
+            #scheme .light {
+                display: block;
+            }
+        }
 
-@media (prefers-color-scheme: no-preference) {
-    body {
-        color: #fff;
-        background-color: #303030;
-    }
-    #scheme .fail {
-        display: none;
-    }
+        @media (prefers-color-scheme: no-preference) {
+            body {
+                color: #fff;
+                background-color: #303030;
+            }
 
-    #scheme .no-preference {
-        display: block;
-    }
-}
+            #scheme .fail {
+                display: none;
+            }
+            #scheme .no-preference {
+                display: block;
+            }
+        }
+
+        /* 主体 */
+        .mui-panel {
+            margin-top: 16px;
+        }
     </style>
 </head>
 <body>
 
-<div class="mui-container typo">
-    <div class="mui-panel">
+<main class="mui-container typo">
+    <!-- prefers-color-scheme 状态 -->
+    <section class="mui-panel">
         <h1 id="scheme">
             当前 prefers-color-scheme 状态为：
             <span class="dark">dark(暗色)。</span>
@@ -95,8 +97,9 @@ h1 {
             <span class="no-preference">no-preference(无偏好)。系统不支持设置主题色或者支持主题色并默认为/被设为了未设置/无偏好。</span>
             <span class="fail">浏览器较旧或系统不支持设置主题色。</span>
         </h1>
-    </div>
-    <div class="mui-panel">
+    </section>
+    <!-- prefers-color-scheme 状态切换讲解 -->
+    <section class="mui-panel">
         <h1>视窗 10(Windows 10)</h1>
         <ul>
             <li>Edge 浏览器(89.0.774.54)
@@ -160,8 +163,8 @@ h1 {
         <ol>
             <li>未测试</li>
         </ol>
-    </div>
-</div>
+    </section>
+</main>
 
 </body>
 </html>
