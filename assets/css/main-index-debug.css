@@ -11,7 +11,7 @@ body#index {
     font-family: 'Noto Sans CJK SC Regular';
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     body#index {
         color: #fff;
         background-image: url(../img/dark.jpg);
@@ -37,7 +37,7 @@ h1 {
     background-color: rgba(0,0,0,.1);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     .mui-btn.mui-btn--flat,
     .mui-btn.mui-btn--flat,
     .mui-btn.mui-btn--flat {
