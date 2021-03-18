@@ -13,10 +13,16 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <!-- 文档内样式 -->
     <style>
+/* 全局 */
 body {
     transition: color, background-color .25s ease-in-out;
 }
 
+h1 {
+    color: inherit;
+}
+
+/* 配色检测 */
 .scheme .light,
 .scheme .dark,
 .scheme .no-preference {
@@ -29,10 +35,6 @@ body {
 
 .mui-panel {
     margin-top: 16px;
-}
-
-h1 {
-    color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {

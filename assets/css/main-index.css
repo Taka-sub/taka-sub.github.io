@@ -11,10 +11,12 @@ body#index {
     font-family: 'Noto Sans CJK SC Regular';
 }
 
-body#index.dark {
-    color: #fff;
-    background-image: url(../img/dark.jpg);
-}
+/* @media (prefers-color-scheme: dark) {
+    body#index {
+        color: #fff;
+        background-image: url(../img/dark.jpg);
+    }
+} */
 
 .hidden {
     display: none !important;
@@ -35,30 +37,30 @@ h1 {
     background-color: rgba(0,0,0,.1);
 }
 
-.dark .mui-btn.mui-btn--flat,
-.dark .mui-btn.mui-btn--flat,
-.dark .mui-btn.mui-btn--flat {
-    color: inherit;
-}
-.dark .mui-btn.mui-btn--flat:active,
-.dark .mui-btn.mui-btn--flat:focus,
-.dark .mui-btn.mui-btn--flat:hover {
-    color: inherit;
-    background-color: rgba(255,255,255,.1);
-}
+/* @media (prefers-color-scheme: dark) {
+    .mui-btn.mui-btn--flat,
+    .mui-btn.mui-btn--flat,
+    .mui-btn.mui-btn--flat {
+        color: inherit;
+    }
+    .mui-btn.mui-btn--flat:active,
+    .mui-btn.mui-btn--flat:focus,
+    .mui-btn.mui-btn--flat:hover {
+        color: inherit;
+        background-color: rgba(255,255,255,.1);
+    }
 
-.dark .mui-dropdown__menu {
-    background-color: #424242;
-}
-
-.dark .mui-dropdown__menu>li>a:focus,
-.dark .mui-dropdown__menu>li>a:hover {
-    background-color: #616161;
-}
-
-.dark .mui-dropdown__menu>li>a {
-    color: inherit;
-}
+    .mui-dropdown__menu {
+        background-color: #424242;
+    }
+    .mui-dropdown__menu>li>a:focus,
+    .mui-dropdown__menu>li>a:hover {
+        background-color: #616161;
+    }
+    .mui-dropdown__menu>li>a {
+        color: inherit;
+    }
+} */
 
 /* 索引页-打字效果 */
 #index .ityped-cursor {
