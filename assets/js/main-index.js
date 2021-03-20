@@ -1,7 +1,7 @@
 // 外网访问检测
 function isWAN() {
-    document.querySelectorAll('.hidden').forEach((elm) => {
-        elm.className = elm.className.replace('hidden', '');
+    document.querySelectorAll('a[hidden]').forEach((elm) => {
+        elm.removeAttribute('hidden')
     });
 };
 
