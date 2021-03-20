@@ -64,45 +64,6 @@ h1 {
     }
 } */
 
-/* 横屏提示 */
-#tips {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 74px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* background-color: linear-gradient(99.78deg,rgba(122, 144, 255, .7) 36.43%, rgba(82, 110, 250, .7) 61.54%); */
-    background-color: rgba(0, 0, 0, .87);
-    text-align: center;
-}
-
-#tips p {
-    color: #fff;
-    line-height: 40px;
-    font-size: 16px;
-    margin: 0;
-}
-
-#tips .close {
-    position: absolute;
-    width: 13.5px;
-    height: 13.5px;
-    top: 30.5px;
-    right: 30.5px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADXSURBVHgBvZdRDoQgDER7JG8kN5Gb6El3Vnc1QUKxQMf5dcJ7MdqqSBYAkxCjnr9fWPDPLBzwfJ6/aGAwBBIwbgLHrUA5LgIF8C9pITAENPDBy4uuAmawt0Az2EugGzwqMAzuFXADtwq4g60CNLBBYKWCDQJccINAEGZ2wKaAV2EG+sN1hbKOLWCOQAW8UQXw8B6DtI7NA8RdAI2TqyaA5MPFHWwQCCYBDM7qbgE4LYkT9DELwHk7mQVAWos1gaswMcBPAmkhMsAVgZgXIgNcEIha4bW/1C8MRWR4wytkNQAAAABJRU5ErkJggg==);
-    background-size: cover;
-    cursor: pointer;
-}
-
-@media (min-width: 600px) {
-    #tips {
-        display: none;
-    }
-}
-
 /* 索引页-打字效果 */
 #index .ityped-cursor {
     font-size: 2.2rem;
