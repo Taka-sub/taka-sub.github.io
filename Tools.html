@@ -122,11 +122,11 @@ document.getElementById('Genpwd_btn').addEventListener('click', function(){
         pwdLe = '';
 
     if(Genpwd_strength.options[1].selected) {
-        pwdChar = pwdArray[0]+pwdArray[2]+pwdArray[2]+pwdArray[3];
+        pwdChar = pwdArray[0]+pwdArray[1]+pwdArray[2]+pwdArray[3];
     }else if(Genpwd_strength.options[2].selected) {
-        pwdChar = pwdArray[0]+pwdArray[3]+pwdArray[2];
+        pwdChar = pwdArray[0]+pwdArray[1]+pwdArray[2];
     }else if(Genpwd_strength.options[3].selected) {
-        pwdChar = pwdArray[0]+pwdArray[4];
+        pwdChar = pwdArray[0]+pwdArray[1];
     }else if(Genpwd_strength.options[4].selected) {
         pwdChar = pwdArray[0];
     }
