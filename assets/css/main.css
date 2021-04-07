@@ -4,6 +4,10 @@
 }
 
 /* 侧边导航栏 */
+#drawer {
+    scrollbar-width: none;
+}
+
 #drawer .copyright {
     box-sizing: border-box;
     width: 100%;
