@@ -30,7 +30,6 @@ $('#drawer').html('<ul class="mdui-list">\
     <ul class="mdui-list">\
         <li class="mdui-subheader">传送门</li>\
         <a hidden href="https://t.me/joinchat/VIDkLgNgoSsWYM4Z"><li class="mdui-list-item mdui-ripple">Telegram 群组</li></a>\
-        <a href="https://jq.qq.com/?_wv=1027&k=lon6Dfsc"><li class="mdui-list-item mdui-ripple">QQ 群组</li></a>\
         <a hidden href="https://nyaa.si/user/ointment"><li class="mdui-list-item mdui-ripple">Nyaa·表区</li></a>\
         <a hidden href="https://sukebei.nyaa.si/user/ointment"><li class="mdui-list-item mdui-ripple">Nyaa·里区</li></a>\
         <a href="https://space.bilibili.com/343162729/dynamic"><li class="mdui-list-item mdui-ripple">哔哩哔哩</li></a>\
