@@ -10,21 +10,27 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>鹰小队翻译组 - 导航页</title>
     <!-- 外部样式 -->
-    <link rel="stylesheet" href="assets/css/mui.min.css">
-    <link rel="stylesheet" href="assets/css/main-index.css">
+    <link rel="stylesheet" href="assets/css/mdui.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- 文档内样式 -->
 </head>
-<body>
+<body class="mdui-theme-layout-auto">
 
-<div class="wrapper" data-vide-bg="mp4: Flyme.mp4, poster: Flyme.png">
-    <h1><span id="iTyped"></span> 翻译组</h1>
-    <a href="nav.html" class="mui-btn mui-btn--flat">More</a>
+<!-- 应用栏 -->
+<div class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="/index.html" class="mdui-typo-headline mdui-hidden-xs-down">鹰小队翻译组</a>
+        <span class="mdui-typo-title">导航页</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <span id="audioClicker" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '播放或暂停《School Days - NicolArmarfi》', position: 'left'}"><i class="mdui-icon material-icons">play_arrow</i></span>
+    </div>
 </div>
 
+<!-- 音乐 -->
+<audio id="audio" src="assets/audios/1-06 School Days.mp3" loop="true" preload="metadata"></audio>
+
 <!-- 外部脚本 -->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/jquery.vide.min.js"></script>
-<script src="assets/js/ityped.min.js"></script>
-<script src="assets/js/main-index.js"></script>
+<script src="assets/js/mdui.min.js"></script>
+<script src="assets/js/main.js"></script>
 
 </html>
