@@ -38,6 +38,14 @@ $("#audioClicker").on("click",function() {
     if(audioClicker.text() === "play_arrow") {
         audioClicker.html('<i class="mdui-icon material-icons">pause</i>');
         audio.play();
+        mdui.snackbar({
+            message: '正在播放的作品为《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。',
+            position: 'left-bottom',
+            buttonText: '获取游戏',
+            onClick: function(){
+                window.open('https://www.katawa-shoujo.com/download.php', '_blank');
+            }
+        });
     }else {
         audioClicker.html('<i class="mdui-icon material-icons">play_arrow</i>');
         audio.pause();
