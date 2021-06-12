@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Taka, 鹰小队">
+    <meta name="description" content="liulipack">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>鹰小队翻译组 - 导航页</title>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="assets/css/mdui.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- 文档内样式 -->
+</head>
+<body class="mdui-theme-layout-auto">
+
+<!-- 应用栏 -->
+<div class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="/index.html" class="mdui-typo-headline mdui-hidden-xs-down">鹰小队翻译组</a>
+        <span class="mdui-typo-title">导航页</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <span id="audioClicker" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '播放或暂停音乐', position: 'left'}"><i class="mdui-icon material-icons">play_arrow</i></span>
+    </div>
+</div>
+
+<!-- 容器 -->
+<div class="mdui-container">
+    <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-xl-4">
+        <div class="mdui-col">
+            <div class="mdui-card">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">沟通</div>
+                </div>
+                <div class="mdui-card-actions">
+                    <a href="https://space.bilibili.com/343162729/dynamic" target="_blank" rel="nofollow noopener noreferrer" class="mdui-btn mdui-ripple">哔哩哔哩</a>
+                    <a href="https://m.weibo.cn/u/7369491931" target="_blank" rel="nofollow noopener noreferrer" class="mdui-btn mdui-ripple">微博</a>
+                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-menu="{target: '#contact-more'}" hidden><i class="mdui-icon material-icons">expand_more</i></button>
+                    <ul class="mdui-menu" id="contact-more">
+                        <li class="mdui-menu-item">
+                            <a href="https://twitter.com/EngineSub" target="_blank" rel="nofollow noopener noreferrer" class="mdui-ripple">推特</a>
+                            <a href="https://t.me/joinchat/VIDkLgNgoSsWYM4Z" target="_blank" rel="nofollow noopener noreferrer" class="mdui-ripple">Telegram 群组</a>
+                            <a href="https://www.facebook.com/groups/taka.sub" target="_blank" rel="nofollow noopener noreferrer" class="mdui-ripple">Facebook 小组</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mdui-col" hidden>
+            <div class="mdui-card">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">资源</div>
+                </div>
+                <div class="mdui-card-actions">
+                    <a href="https://sukebei.nyaa.si/user/ointment" target="_blank" rel="nofollow noopener noreferrer" class="mdui-btn mdui-ripple">Nyaa-Fap</a>
+                    <a href="https://nyaa.si/user/ointment" target="_blank" rel="nofollow noopener noreferrer" class="mdui-btn mdui-ripple">Nyaa-Fun</a>
+                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-menu="{target: '#resources-more'}"><i class="mdui-icon material-icons">expand_more</i></button>
+                    <ul class="mdui-menu" id="resources-more">
+                        <li class="mdui-menu-item">
+                            <a href="https://github.com/taka-sub/subtitles" target="_blank" rel="nofollow noopener noreferrer" class="mdui-ripple">taka-sub/subtitles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 音乐 -->
+<audio id="audio" src="assets/audios/1-06 School Days.mp3" loop="true" preload="metadata"></audio>
+
+<!-- 外部脚本 -->
+<script src="assets/js/mdui.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>

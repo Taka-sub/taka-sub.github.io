@@ -1,38 +1,13 @@
-/* 通用 */
-.mdui-theme-layout-dark img {
-    filter:brightness(.8)
+/* 全局 */
+[hidden] {
+    display: none;
 }
 
-/* 侧边导航栏 */
-#drawer {
-    scrollbar-width: none;
+/* 卡片样式 */
+.mdui-row-xs-1 .mdui-col {
+    margin: 8px auto;
 }
 
-#drawer .copyright {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px 16px;
-}
-
-#drawer .copyright p {
-    margin: 0;
-    overflow: hidden;
-    color: rgba(0,0,0,.38);
-    font-size: 13px;
-    line-height: 20px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-#drawer .copyright a {
-    color: rgba(0,0,0,.52);
-    text-decoration: none;
-}
-
-.mdui-theme-layout-dark #drawer .copyright p {
-    color: hsla(0,0%,100%,.38);
-}
-
-.mdui-theme-layout-dark #drawer .copyright a {
-    color: hsla(0,0%,100%,.52);
+.mdui-card {
+    overflow: inherit;
 }

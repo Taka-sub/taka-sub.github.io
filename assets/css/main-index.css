@@ -5,21 +5,10 @@ body#index {
     align-items:center;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(../img/light.png);
+    background-image: url(../images/light.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Noto Sans CJK SC Regular';
-}
-
-/* @media (prefers-color-scheme: dark) {
-    body#index {
-        color: #fff;
-        background-image: url(../img/dark.jpg);
-    }
-} */
-
-a[hidden] {
-    display: none !important;
 }
 
 /* 索引页-标题 */
@@ -38,31 +27,6 @@ h1 {
     color: inherit;
     background-color: rgba(0,0,0,.1);
 }
-
-/* @media (prefers-color-scheme: dark) {
-    .mui-btn.mui-btn--flat,
-    .mui-btn.mui-btn--flat,
-    .mui-btn.mui-btn--flat {
-        color: inherit;
-    }
-    .mui-btn.mui-btn--flat:active,
-    .mui-btn.mui-btn--flat:focus,
-    .mui-btn.mui-btn--flat:hover {
-        color: inherit;
-        background-color: rgba(255,255,255,.1);
-    }
-
-    .mui-dropdown__menu {
-        background-color: #424242;
-    }
-    .mui-dropdown__menu>li>a:focus,
-    .mui-dropdown__menu>li>a:hover {
-        background-color: #616161;
-    }
-    .mui-dropdown__menu>li>a {
-        color: inherit;
-    }
-} */
 
 /* 索引页-打字效果 */
 #index .ityped-cursor {

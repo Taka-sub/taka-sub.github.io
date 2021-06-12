@@ -1,2 +1,3 @@
 # taka-sub.github.io
-官网。 Official.
+- 鹰小队翻译组官网。
+- 目前仅用于各个链接索引。
