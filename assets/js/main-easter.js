@@ -7,5 +7,17 @@ const dp = new DPlayer({
         autoplay: true,
         loop: true,
         volume: 0.2
-    }
+    },
+    contextmenu: [
+        {
+            text: '再来一段',
+            click: () => {
+                location.reload();
+            },
+        },
+        {
+            text: '返回导航页',
+            link: 'nav.html',
+        }
+    ]
 });
