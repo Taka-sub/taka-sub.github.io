@@ -17,10 +17,10 @@ $('a[href]').each(
 function isWAN() {
     document.querySelectorAll('[hidden]').forEach((elm) => {
         elm.removeAttribute('hidden');
-        mdui.snackbar({
-            message: '检测到外网访问成功，更多链接被解锁。',
-            position: 'left-bottom'
-        });
+    });
+    mdui.snackbar({
+        message: '检测到外网访问成功，更多链接被解锁。',
+        position: 'left-bottom'
     });
 };
 
