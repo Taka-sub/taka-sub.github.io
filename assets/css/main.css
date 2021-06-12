@@ -15,7 +15,8 @@
 /* 彩蛋 */
 #easter {
     opacity: 0;
-    animation: 5s fad 120s;
+    animation: 10s fad 5s;
+    cursor: default;
 }
 
 @keyframes fad {
@@ -24,5 +25,6 @@
     }
     50% {
         opacity: 0.05;
+        cursor: pointer;
     }
 }
