@@ -9,6 +9,10 @@ body {
     width: 100vw;
 }
 
-.dplayer-menu-item a{
+/* .dplayer-menu-item a{
     text-decoration: none;
+} */
+
+.dplayer-menu {
+    display: none !important;
 }

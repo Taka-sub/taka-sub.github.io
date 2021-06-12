@@ -11,3 +11,18 @@
 .mdui-card {
     overflow: inherit;
 }
+
+/* 彩蛋 */
+#easter {
+    opacity: 0;
+    animation: 5s fad 120s;
+}
+
+@keyframes fad {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.05;
+    }
+}
