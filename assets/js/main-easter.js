@@ -9,15 +9,3 @@ const dp = new DPlayer({
         volume: 0.2
     }
 });
-
-/* 链接属性
-$('a[href]').each(
-	function() {
-		const regex = new RegExp('taka-sub.github.io');
-		if(!regex.test($(this).attr('href'))) {
-			$(this).attr({'target': '_blank', 'rel': 'nofollow noopener noreferrer'});
-		}else {
-			$(this).removeAttr('target');
-		}
-	}
-);*/
