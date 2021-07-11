@@ -24,20 +24,19 @@ function isWAN() {
     });
 };
 
-document.querySelector('body').innerHTML += '<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" id="LANCheck" style="display: none;">'
+document.querySelector('body').innerHTML += '<img src="https://i.imgur.com/xL9Y87T.gif" onload="isWAN()" id="WANCheck" style="display: none;">'
 
 setTimeout(function() {
-    let LANCheck = document.getElementById('LANCheck');
-    LANCheck.removeAttribute('src');
-    LANCheck.parentNode.removeChild(LANCheck);
+    let WANCheck = document.getElementById('WANCheck');
+    WANCheck.removeAttribute('src');
+    WANCheck.parentNode.removeChild(WANCheck);
 },1000);
 
 // 音乐
 audio.volume = 0.2;
 
 $("#audioClicker").on("click",function() {
-    let audioClicker = $('#audioClicker'),
-        audio = document.querySelector('#audio')
+    let audioClicker = $('#audioClicker')
 
     if(audioClicker.text() === "play_arrow") {
         audioClicker.html('<i class="mdui-icon material-icons">pause</i>');
