@@ -41,13 +41,22 @@ $("#audioClicker").on("click",function() {
     if(audioClicker.text() === "play_arrow") {
         audioClicker.html('<i class="mdui-icon material-icons">pause</i>');
         audio.play();
+        // mdui.snackbar({
+        //     message: '正在播放的作品为《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。',
+        //     position: 'left-bottom',
+        //     buttonText: '获取游戏',
+        //     closeOnButtonClick: false,
+        //     onButtonClick: function() {
+        //         window.open('https://www.katawa-shoujo.com/download.php', '_blank');
+        //     }
+        // });
         mdui.snackbar({
-            message: '正在播放的作品为《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。',
+            message: '正在播放的作品为《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。',
             position: 'left-bottom',
             buttonText: '获取游戏',
             closeOnButtonClick: false,
             onButtonClick: function() {
-                window.open('https://www.katawa-shoujo.com/download.php', '_blank');
+                window.open('https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/', '_blank');
             }
         });
     }else {
