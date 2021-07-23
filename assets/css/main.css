@@ -28,3 +28,25 @@
         cursor: pointer;
     }
 }
+
+/* 音乐-APlayer */
+#player .aplayer-info .aplayer-music .aplayer-title,
+#player .aplayer-list li .aplayer-list-title {
+    color: rgba(0,0,0,.87);
+}
+
+#player .aplayer-lrc .aplayer-lrc-contents p {
+    color: #fff;
+    opacity: .54;
+    transition: color,font-weight,opacity 0.75s linear;
+    text-shadow: none
+}
+@media (prefers-color-scheme: light) {
+    #player .aplayer-lrc .aplayer-lrc-contents p {
+        color: #000;
+    }
+}
+#player .aplayer-lrc .aplayer-lrc-contents p.aplayer-lrc-current {
+    opacity: 1;
+    font-weight: bold;
+}

@@ -12,6 +12,7 @@
     <title>鹰小队翻译组 - 导航页</title>
     <!-- 外部样式 -->
     <link rel="stylesheet" href="assets/css/mdui.min.css">
+    <link rel="stylesheet" href="assets/css/APlayer.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- 文档内样式 -->
 </head>
@@ -24,7 +25,6 @@
         <span class="mdui-typo-title">导航页</span>
         <div class="mdui-toolbar-spacer"></div>
         <a href="easter.html" id="easter" target="_blank" rel="nofollow noopener noreferrer" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">live_tv</i></a>
-        <span id="audioClicker" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '播放或暂停音乐', position: 'left'}"><i class="mdui-icon material-icons">play_arrow</i></span>
     </div>
 </div>
 
@@ -90,11 +90,11 @@
 </div>
 
 <!-- 音乐 -->
-<!-- <audio id="audio" src="assets/audios/1-06 School Days.mp3" loop="true" preload="metadata"></audio> -->
-<audio id="audio" src="assets/audios/春日花语 辅调二循环.mp3" loop="true" preload="metadata"></audio>
+<div id="player"></div>
 
 <!-- 外部脚本 -->
 <script src="assets/js/mdui.min.js"></script>
+<script src="assets/js/APlayer.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </html>

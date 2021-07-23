@@ -33,34 +33,39 @@ setTimeout(function() {
 },1000);
 
 // 音乐
-audio.volume = 0.2;
-
-$("#audioClicker").on("click",function() {
-    let audioClicker = $('#audioClicker')
-
-    if(audioClicker.text() === "play_arrow") {
-        audioClicker.html('<i class="mdui-icon material-icons">pause</i>');
-        audio.play();
-        // mdui.snackbar({
-        //     message: '正在播放的作品为《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。',
-        //     position: 'left-bottom',
-        //     buttonText: '获取游戏',
-        //     closeOnButtonClick: false,
-        //     onButtonClick: function() {
-        //         window.open('https://www.katawa-shoujo.com/download.php', '_blank');
-        //     }
-        // });
-        mdui.snackbar({
-            message: '正在播放的作品为《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。',
-            position: 'left-bottom',
-            buttonText: '获取游戏',
-            closeOnButtonClick: false,
-            onButtonClick: function() {
-                window.open('https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/', '_blank');
-            }
-        });
-    }else {
-        audioClicker.html('<i class="mdui-icon material-icons">play_arrow</i>');
-        audio.pause();
+const ap = new APlayer({
+    container: document.getElementById('player'),
+    autoplay: false,
+    loop: 'one',
+    order: 'random',
+    preload: 'metadata',
+    volume: 0.2,
+    fixed: true,
+    lrcType: 3,
+    audio: [
+    { //《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。(https://www.katawa-shoujo.com/download.php)
+        name: 'School Days(校园日)',
+        artist: 'NicolArmarfi',
+        url: 'assets/audios/1-06 School Days.mp3',
+        cover: 'assets/audios/1-06 School Days.png',
+        lrc: 'assets/audios/1-06 School Days.lrc',
+        theme: '#d1b993'
+    },
+    { //《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。(https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/)
+        name: '春日花语 铺调',
+        artist: '未知',
+        url: 'assets/audios/春日花语 辅调二循环.mp3',
+        lrc: 'assets/audios/春日花语 辅调二循环.lrc'
+    },
+    { //《领风者 - 南征北战NZBZ》，来自国创动画《领风者》。(https://www.bilibili.com/bangumi/media/md4313622)
+        name: '领风者',
+        artist: '南征北战NZBZ',
+        url: 'assets/audios/领风者 - 南征北战NZBZ.mp3',
+        cover: 'assets/audios/领风者 - 南征北战NZBZ.jpg',
+        lrc: 'assets/audios/领风者 - 南征北战NZBZ.lrc',
+        theme: '#618fc0'
     }
-})
+  ]
+});
+
+ap.lrc.hide()
