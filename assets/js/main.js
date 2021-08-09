@@ -20,7 +20,7 @@ function isWAN() {
     });
     mdui.snackbar({
         message: '检测到外网访问成功，更多链接被解锁。',
-        position: 'left-bottom'
+        position: 'right-bottom'
     });
 };
 
@@ -74,6 +74,35 @@ const ap = new APlayer({
             theme: '#f56282'
         }
     ]
+});
+
+ap.on('play', function () {
+    let title = document.querySelector('#player .aplayer-title'),
+        audioIntro = '',
+        audioLink = '';
+
+    if(title.textContent == 'School Days(校园日)') {
+        audioIntro = '《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。',
+        audioLink = 'https://www.katawa-shoujo.com/download.php';
+    }else if(title.textContent == '春日花语 铺调') {
+        audioIntro = '《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。',
+        audioLink = 'https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/';
+    }else if(title.textContent == '领风者') {
+        audioIntro = '《领风者 - 南征北战NZBZ》，来自国创动画《领风者》。',
+        audioLink = 'https://www.bilibili.com/bangumi/media/md4313622';
+    }else if(title.textContent == '夜行少女') {
+        audioIntro = '《夜行少女 - 小野道ono Feat.花近》，2017 年 Bilibili 拜年祭节目之一。';
+        audioLink = 'https://www.bilibili.com/video/BV1Xx41117Tz';
+    }
+
+    mdui.snackbar({
+        message: audioIntro,
+        position: 'right-bottom',
+        buttonText: '更多信息',
+        onButtonClick: function(){
+            window.open(audioLink, '_blank')
+        }
+    });
 });
 
 // ap.lrc.hide()
