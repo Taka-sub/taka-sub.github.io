@@ -43,29 +43,37 @@ const ap = new APlayer({
     fixed: true,
     lrcType: 3,
     audio: [
-    { //《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。(https://www.katawa-shoujo.com/download.php)
-        name: 'School Days(校园日)',
-        artist: 'NicolArmarfi',
-        url: 'assets/audios/1-06 School Days.mp3',
-        cover: 'assets/audios/1-06 School Days.png',
-        lrc: 'assets/audios/1-06 School Days.lrc',
-        theme: '#d1b993'
-    },
-    { //《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。(https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/)
-        name: '春日花语 铺调',
-        artist: '未知',
-        url: 'assets/audios/春日花语 辅调二循环.mp3',
-        lrc: 'assets/audios/春日花语 辅调二循环.lrc'
-    },
-    { //《领风者 - 南征北战NZBZ》，来自国创动画《领风者》。(https://www.bilibili.com/bangumi/media/md4313622)
-        name: '领风者',
-        artist: '南征北战NZBZ',
-        url: 'assets/audios/领风者 - 南征北战NZBZ.mp3',
-        cover: 'assets/audios/领风者 - 南征北战NZBZ.jpg',
-        lrc: 'assets/audios/领风者 - 南征北战NZBZ.lrc',
-        theme: '#618fc0'
-    }
-  ]
+        { //《School Days - NicolArmarfi》，来自开源 GalGame《片轮少女》。(https://www.katawa-shoujo.com/download.php)
+            name: 'School Days(校园日)',
+            artist: 'NicolArmarfi',
+            url: 'assets/audios/1-06 School Days.mp3',
+            cover: 'assets/audios/1-06 School Days.png',
+            lrc: 'assets/audios/1-06 School Days.lrc',
+            theme: '#d1b993'
+        },
+        { //《春日花语 铺调》，来自万代南梦宫娱乐《火影忍者 究极风暴3》。(https://store.steampowered.com/app/234670/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_3_Full_Burst_HD/)
+            name: '春日花语 铺调',
+            artist: '未知',
+            url: 'assets/audios/春日花语 辅调二循环.mp3',
+            lrc: 'assets/audios/春日花语 辅调二循环.lrc'
+        },
+        { //《领风者 - 南征北战NZBZ》，来自国创动画《领风者》。(https://www.bilibili.com/bangumi/media/md4313622)
+            name: '领风者',
+            artist: '南征北战NZBZ',
+            url: 'assets/audios/领风者 - 南征北战NZBZ.mp3',
+            cover: 'assets/audios/领风者 - 南征北战NZBZ.jpg',
+            lrc: 'assets/audios/领风者 - 南征北战NZBZ.lrc',
+            theme: '#618fc0'
+        },
+        { //《夜行少女 - 小野道ono Feat.花近》，2017 年 Bilibili 拜年祭节目之一。(https://www.bilibili.com/video/BV1Xx41117Tz)
+            name: '夜行少女',
+            artist: '小野道ono Feat.花近',
+            url: 'assets/audios/夜行少女 - 小野道ono Feat.花近.mp3',
+            cover: 'assets/audios/夜行少女 - 小野道ono Feat.花近.jpg',
+            lrc: 'assets/audios/夜行少女 - 小野道ono Feat.花近.lrc',
+            theme: '#f56282'
+        }
+    ]
 });
 
-ap.lrc.hide()
+// ap.lrc.hide()
