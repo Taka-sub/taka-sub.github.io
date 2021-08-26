@@ -93,6 +93,9 @@ ap.on('play', function () {
     }else if(title.textContent == '夜行少女') {
         audioIntro = '《夜行少女 - 小野道ono Feat.花近》，2017 年 Bilibili 拜年祭节目之一。';
         audioLink = 'https://www.bilibili.com/video/BV1Xx41117Tz';
+    }else {
+        audioIntro = '等一下，这好像有点不对。你对我做了什么？！';
+        audioLink = 'https://cn.bing.com/?ensearch=1';
     }
 
     mdui.snackbar({
